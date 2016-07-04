@@ -7,6 +7,16 @@
 
 int main ()
 {
+//You can add following while loop snippet to monitor the specific notepad process , seems works fine 
+       while(1)
+	{ 
+	HWND hinst = FindWindow (TEXT ("notepad"), NULL);
+	if (hinst == NULL)
+		Sleep (1);
+	else
+		break;
+	}
+	
 
 	/*
 	* Load library in which we'll be hooking our functions.
