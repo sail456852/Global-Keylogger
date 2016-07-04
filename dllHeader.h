@@ -20,7 +20,7 @@ extern "C"
 #endif
 
 INT APIENTRY DllMain(HMODULE hDLL, DWORD Reason, LPVOID Reserved);
-int meconnect(int code, WPARAM wParam, LPARAM lParam);
+int meconnect(int code, WPARAM wParam, LPARAM lParam);  //errror , redefinition ? aha ?
 
 
 #ifdef __cplusplus
