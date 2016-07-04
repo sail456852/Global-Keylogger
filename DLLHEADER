@@ -1,0 +1,31 @@
+#ifndef __MAIN_H__
+#define __MAIN_H__
+#include <windows.h>
+
+/*  To use this exported function of dll, include this header
+*  in your project.
+*/
+#define BUILD_DLL
+#ifdef BUILD_DLL
+#define DLL_EXPORT __declspec(dllexport)
+#else
+#define DLL_EXPORT __declspec(dllimport)
+#endif
+
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+	DLL_EXPORT INT APIENTRY DllMain (HMODULE hDLL, DWORD Reason, LPVOID Reserved);
+	DLL_EXPORT int meconnect (int nCode, WPARAM wParam, LPARAM lParam);
+
+
+#ifdef __cplusplus
+}
+#endif
+
+//This header works , but I don't understand why 
+
+#endif // __MAIN_H__
