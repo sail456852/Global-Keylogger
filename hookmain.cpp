@@ -6,6 +6,7 @@
 
 //This is a global hook installation code . after tests , I find that it only works in these scenarios : normal keyboard input  .including
 //Windows Scurity Window (Sometimes pops up when you open a RDP connection).Notepad .Chrome . and Other normal Windows Window application (Non-Full Screen Remote Desktop Connection)
+//This wokrs in Notepad full screen mode .
 //This code doesn't work in these scenarios : UAC ,Full Screen Remote Desktop Connection , Windows Logon Screen .I will add more later 
 int main()
 {
